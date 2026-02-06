@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hug Day</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page 1: Intro -->
+<div id="page1" class="page">
+  <h2>brewing some magic🪐✨💝,,</h2>
+  <button id="next1">Next</button>
+</div>
+
+<!-- Page 2: Polaroid photos -->
+<div id="page2" class="page" style="display:none;">
+  <div class="polaroid-stack">
+    <div class="polaroid" id="photo1-div">
+      <img src="photo1.jpg" alt="us!?" />
+      <p>us!?</p>
+    </div>
+    <div class="polaroid" id="photo2-div">
+      <img src="photo2.jpg" alt="my jigar ka tukda ❤️🌙" />
+      <p>my jigar ka tukda ❤️🌙</p>
+    </div>
+  </div>
+  <button id="next2">Next</button>
+</div>
+
+<!-- Page 3: Final note -->
+<div id="page3" class="page" style="display:none;">
+  <div class="note">
+    <p>hii jaanuu,</p>
+    <p>Happy hug day my loveee 🤭💗..I am so sorry I cant give u a hug at this moment but i promise once we meet i'd give u the most tightest hug that could ever existtt 🥹😋..love you jaanu (abhi ke liye virtually hi kaam chala looo)🫂✨💗</p>
+    <img src="final.gif" alt="Hug Day" id="final-gif" />
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
