@@ -1,19 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const page1 = document.getElementById("page1");
-  const page2 = document.getElementById("page2");
-  const page3 = document.getElementById("page3");
+  const buttons = document.querySelectorAll(".next-button");
 
-  // Next button: intro → photos
-  document.getElementById("next1").addEventListener("click", ()=>{
-    page1.style.display = "none";
-    page2.style.display = "block";
-  });
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const currentPage = button.closest(".page");
+      const nextPageId = button.getAttribute("data-next");
+      const nextPage = document.getElementById(nextPageId);
 
-  // Next button: photos → final note
-  document.getElementById("next2").addEventListener("click", ()=>{
-    page2.style.display = "none";
-    page3.style.display = "block";
+      if(currentPage) currentPage.style.display = "none";
+      if(nextPage) nextPage.style.display = "block";
+    });
   });
 
 });
