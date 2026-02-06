@@ -11,34 +11,36 @@
 <!-- Page 1: Intro -->
 <div id="page1" class="page">
   <h2>brewing some magic🪐✨💝,,</h2>
-  <button id="next1">Next</button>
+  <button class="next-button" data-next="page2">Next</button>
 </div>
 
-<!-- Page 2: Polaroid photos -->
+<!-- Page 2: Photo 1 -->
 <div id="page2" class="page" style="display:none;">
-  <div class="polaroid-stack">
-    <div class="polaroid" id="photo1-div">
-      <img src="photo1.jpg" alt="us!?" />
-      <p>us!?</p>
-    </div>
-    <div class="polaroid" id="photo2-div">
-      <img src="photo2.jpg" alt="my jigar ka tukda ❤️🌙" />
-      <p>my jigar ka tukda ❤️🌙</p>
-    </div>
+  <div class="photo-container">
+    <img src="photo1.jpg" alt="us!?" class="hug-photo" />
+    <p>us!?</p>
   </div>
-  <button id="next2">Next</button>
+  <button class="next-button" data-next="page3">Next</button>
 </div>
 
-<!-- Page 3: Final note -->
+<!-- Page 3: Photo 2 -->
 <div id="page3" class="page" style="display:none;">
+  <div class="photo-container">
+    <img src="photo2.jpg" alt="my jigar ka tukda ❤️🌙" class="hug-photo" />
+    <p>my jigar ka tukda ❤️🌙</p>
+  </div>
+  <button class="next-button" data-next="page4">Next</button>
+</div>
+
+<!-- Page 4: Final note -->
+<div id="page4" class="page" style="display:none;">
   <div class="note">
     <p>hii jaanuu,</p>
     <p>Happy hug day my loveee 🤭💗..I am so sorry I cant give u a hug at this moment but i promise once we meet i'd give u the most tightest hug that could ever existtt 🥹😋..love you jaanu (abhi ke liye virtually hi kaam chala looo)🫂✨💗</p>
-    <img src="final.gif" alt="Hug Day" id="final-gif" />
+    <img src="final.gif" alt="Hug Day" class="final-gif" />
   </div>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
